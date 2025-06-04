@@ -1,5 +1,4 @@
 ---
-typora-root-url: D:\git\kekaiyuan.github.io
 layout: post
 title: Java Spring 05—— AOP 的高级应用
 categories: Spring
