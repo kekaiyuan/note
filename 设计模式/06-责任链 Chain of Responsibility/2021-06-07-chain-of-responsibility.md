@@ -95,7 +95,7 @@ Q1 和 Q2 还可以尝试用最粗暴的编程思想去解决，但是 Q3 却没
 
 于是**责任链模式**应运而生。
 
-![image](/images/posts/designpatterns/chain-of-responsibility/process2.png)
+![image](/assets/process2.png)
 
 所有的处理方法组织成**链式结构**。<br>
 然后某个具体的处理方法可以决定处理对象是否已经处理完毕，是否需要**交给下一个方法处理**，或是直接**结束处理流程**。
@@ -312,7 +312,7 @@ Request 需要 Filter 过滤掉不必要的前端信息。<br>
 Response 需要 Filter 加上必要的前端信息。
 
 如果采用这样的设计<br>
-![image](/images/posts/designpatterns/chain-of-responsibility/server01.png)
+![image](/assets/server01.png)
 这需要实现两个责任链，六个 Filter ，而且需要建立两次 Http 请求。<br>
 一次 Http 请求是从
 

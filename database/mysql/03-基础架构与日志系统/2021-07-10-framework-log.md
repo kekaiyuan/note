@@ -11,7 +11,7 @@ MySQL 之——基础架构与日志系统
 
 ## 基础架构
 
-![image](/images/posts/database/mysql/framework-log/framework.png)
+![image](/assets/framework.png)
 
 ### 连接器
 连接器负责跟客户端**建立连接**，**获取权限**、**维持和管理连接**
@@ -135,7 +135,7 @@ Q：Redo Log 在磁盘中，数据库也在磁盘中，为什么不直接更新�
 
 而是通过缓冲池的机制来实现。
 
-![image](/images/posts/database/mysql/framework-log/innodb.jpg)
+![image](/assets/innodb.jpg)
 
 Redo Log 会先写入 InnoDB 的 **Log Buffer** ，这个缓存位于内存中的**用户区**。
 
@@ -144,7 +144,7 @@ Redo Log 会先写入 InnoDB 的 **Log Buffer** ，这个缓存位于内存中�
 最终 OS Buffer 会使用 **fsync() 函数** 将数据**同步**到文件中。
 
 #### Redo Log Block
-![image](/images/posts/database/mysql/framework-log/redolog2.png)
+![image](/assets/redolog2.png)
 
 Redo Log Buffer 和 Redo Log File 都是被划分为一个个 Redo Log Block 的。<br>
 多条 Redo Log 可以存入一个 Block 中，而一个 Block 的大小是 512 字节，刚好是一个扇区的大小。
@@ -155,7 +155,7 @@ Redo Log Buffer 和 Redo Log File 都是被划分为一个个 Redo Log Block 的
 #### 刷新策略
 在 MySQL 中，有一个变量名为 `innodb_flush_log_at_trx_commit`，用来控制redo log刷新到磁盘的策略。
 
-![image](/images/posts/database/mysql/framework-log/buffer.jpg)
+![image](/assets/buffer.jpg)
 - `innodb_flush_log_at_trx_commit = 0`<br>
 	每次 commit 直接写入 Log Buffer ，然后每秒写入 OS Buffer，并调用 fsync() 刷到磁盘。
 - `innodb_flush_log_at_trx_commit = 1`<br>
@@ -175,7 +175,7 @@ ib_logfile 的文件可以有多个，每一个都是同样的大小。
 
 这些文件组成一个**环状**的结构。
 
-![image](/images/posts/database/mysql/framework-log/ib_logfile.png)
+![image](/assets/ib_logfile.png)
 
 ----------
 **循环写**
@@ -273,7 +273,7 @@ Bin Log 是 Server 层的日志，主要做 MySQL 功能层面的事情。
 ### Redo Log 的两阶段提交
 
 数据更新 DML 的流程
-![image](/images/posts/database/mysql/framework-log/process.png)
+![image](/assets/process.png)
 
 执行流程：
 1. 执行器先从引擎中找到数据，如果在内存中直接返回，如果不在内存中，查询后返回。

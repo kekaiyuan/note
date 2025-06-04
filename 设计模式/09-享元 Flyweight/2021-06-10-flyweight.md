@@ -86,11 +86,11 @@ Integer类里有个数组存放了值为-128~127的int类型。<br>
 只有当超出范围后，Integer类才会创建一个新对象。<br>
 
 - uml图<br>
-![image](/images/posts/designpatterns/flyweight/flyweight.png)
+![image](/assets/flyweight.png)
 
 - 享元模式还可以与组合模式搭配使用。<br>
 圆是图元，正方形也是图元。当圆和正方形的搭配使用次数非常多时，就可以把这个搭配作为新的图元存入缓存池。<br>
 ppt中就有这个功能，把多个图元框选在一起设置为组合。<br>
 设置之后这个组合就成了新的图元，可以执行移动、缩放、复制等操作。<br>
 缓存池中也多了一个由圆和正方形组成的图元。<br>
-![image](/images/posts/designpatterns/flyweight/composite.png)
+![image](/assets/composite.png)

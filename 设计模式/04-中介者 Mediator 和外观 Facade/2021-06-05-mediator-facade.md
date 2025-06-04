@@ -12,7 +12,7 @@ keywords: Java，设计模式
 
 假设现在你有五个模块，这五个模块之间互有联系。
 
- ![image](/images/posts/designpatterns/mediator-facade/mediator-01.png)
+ ![image](/assets/mediator-01.png)
 
 联系有点复杂，但是好像还可以接受。
 
@@ -21,7 +21,7 @@ keywords: Java，设计模式
 
 所以我们需要一个“中介者”，帮我们调停模块之间的联系。
 
- ![image](/images/posts/designpatterns/mediator-facade/mediator-02.png)
+ ![image](/assets/mediator-02.png)
 
 消息队列也是提现了这样的思想。
 
@@ -96,11 +96,11 @@ keywords: Java，设计模式
 
 加入外观模式之前：
 
-![image](/images/posts/designpatterns/mediator-facade/facade-01.png)
+![image](/assets/facade-01.png)
 
 加入外观模式之后：
 
-![image](/images/posts/designpatterns/mediator-facade/facade-02.png)
+![image](/assets/facade-02.png)
 
 ## 概念
 外观模式（Facade Pattern）隐藏系统的复杂性，并向客户端提供了一个客户端可以访问系统的接口。这种类型的设计模式属于结构型模式，它向现有的系统添加一个接口，来隐藏系统的复杂性。
