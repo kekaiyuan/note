@@ -109,7 +109,7 @@ Note over B: 执行错误操作
 对于一般用户来说，他们不需要担心自己的电脑（即客户端）合不合法，他们只担心访问的网站（服务器）合不合法。<br>
 客户端发出请求后，服务器会在响应报文中放入自己的**数字证书**，以便客户端检查得到的消息是否是正确的。<br>
 各类浏览器都会实现对于证书的解析，有问题的会进行如下提示：<br>
-![image](\images\posts\encryption\asymmetric\unsafe.png)<br>
+![image](/assets/unsafe.png)<br>
 这就是证书有问题的网站：**它无法证明它是自己**。<br>
 尽量不要使用此类网站，如果一定要使用，请注意：
 - 谨慎填写任何有用的信息，包括但不限于
@@ -144,9 +144,9 @@ Note over B: 执行错误操作
 	客户端收到响应报文后，会在列表中寻找能解开数字证书的**公钥**。<br>
 	一般而言，会发生以下两种安全问题：
 	- 证书的颁发机构不受信任。<br>
-		![image](\images\posts\encryption\asymmetric\not-trusted.jpeg)
+		![image](/assets/not-trusted.jpeg)
 	- 证书的内容被修改了。<br>
-		![image](\images\posts\encryption\asymmetric\be-modified.png)
+		![image](/assets/be-modified.png)
 5. 如果证书没问题，则客户端使用证书中记载的**服务器的公钥**解开报文。
 
 ##### 数字签名
