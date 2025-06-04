@@ -140,7 +140,7 @@ true
 
 这就是浅克隆，新对象和旧对象的值**完全一致**。
 
-![](\images\posts\designpatterns\prototype\loc.png)
+![](/assets/loc.png)
 
 ```java
     protected native Object clone() throws CloneNotSupportedException;
