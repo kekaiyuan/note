@@ -1,4 +1,5 @@
 ---
+typora-root-url: ./
 layout: post
 title: Java 之——使用 Netty 实现 CS 模型
 categories: Java

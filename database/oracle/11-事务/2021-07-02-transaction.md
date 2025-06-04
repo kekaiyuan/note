@@ -1,4 +1,5 @@
 ---
+typora-root-url: ./
 layout: post
 title: Oracle 之——事务
 categories: Oracle

@@ -1,4 +1,5 @@
 ---
+typora-root-url: ./
 layout: post
 title: 一份简明的 Markdown 笔记与教程
 categories: Markdown

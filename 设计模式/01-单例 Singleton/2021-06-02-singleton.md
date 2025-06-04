@@ -1,4 +1,5 @@
 ---
+typora-root-url: ./
 layout: post
 title: 设计模式之——单例 Singleton
 categories: DesignPatterns

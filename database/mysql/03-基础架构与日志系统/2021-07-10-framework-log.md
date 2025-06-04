@@ -1,4 +1,5 @@
 ---
+typora-root-url: ./
 layout: post
 title: MySQL 之——基础架构与日志系统
 categories: MySQL

@@ -1,4 +1,5 @@
 ---
+typora-root-url: ./
 layout: post
 title: 关于 Markdown 的一些奇技淫巧
 categories: Markdown

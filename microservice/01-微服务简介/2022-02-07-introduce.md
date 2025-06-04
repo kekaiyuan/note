@@ -1,4 +1,5 @@
 ---
+typora-root-url: ./
 layout: post
 title: 微服务架构——微服务简介
 categories: 微服务

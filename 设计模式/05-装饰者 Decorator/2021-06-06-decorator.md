@@ -1,4 +1,5 @@
 ---
+typora-root-url: ./
 layout: post
 title: 设计模式之——装饰者 Decorator
 categories: DesignPatterns

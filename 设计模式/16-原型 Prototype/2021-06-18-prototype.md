@@ -1,4 +1,5 @@
 ---
+typora-root-url: ./
 layout: post
 title: 设计模式之——原型 Prototype
 categories: DesignPatterns

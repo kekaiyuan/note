@@ -1,4 +1,5 @@
 ---
+typora-root-url: ./
 layout: post
 title: Java Spring 05—— AOP 的高级应用
 categories: Spring

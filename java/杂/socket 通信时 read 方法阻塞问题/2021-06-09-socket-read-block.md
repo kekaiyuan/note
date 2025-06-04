@@ -1,4 +1,5 @@
-``---
+---
+typora-root-url: ./
 layout: post
 title:  socket 通信时 read 方法阻塞问题
 categories: Java

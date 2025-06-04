@@ -1,4 +1,5 @@
 ---
+typora-root-url: ./
 layout: post
 title: 设计模式之——中介者 Mediator 和外观 Facade
 categories: DesignPatterns

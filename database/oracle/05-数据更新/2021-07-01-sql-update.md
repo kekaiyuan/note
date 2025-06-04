@@ -1,4 +1,5 @@
 ---
+typora-root-url: ./
 layout: post
 title: Oracle SQL 之——数据更新
 categories: Oracle

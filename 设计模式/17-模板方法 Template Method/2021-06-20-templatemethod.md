@@ -1,4 +1,5 @@
 ---
+typora-root-url: ./
 layout: post
 title: 设计模式之——模板方法 Template Method
 categories: DesignPatterns

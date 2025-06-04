@@ -1,4 +1,5 @@
 ---
+typora-root-url: ./
 layout: post
 title: MySQL 之——基础架构
 categories: [cate1, cate2]

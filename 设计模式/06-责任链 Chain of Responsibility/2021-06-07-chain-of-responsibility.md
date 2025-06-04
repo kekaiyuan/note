@@ -1,4 +1,5 @@
 ---
+typora-root-url: ./
 layout: post
 title: 设计模式之——责任链 Chain of Responsibility
 categories: DesignPatterns

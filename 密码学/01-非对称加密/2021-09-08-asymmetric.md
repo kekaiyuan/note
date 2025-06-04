@@ -1,4 +1,5 @@
 ---
+typora-root-url: ./
 layout: post
 title: 非对称加密
 categories: [cate1, cate2]
